@@ -16,6 +16,9 @@ namespace HW4._3.Model
             get { return _name; }
             set
             {
+                char firstLetter = value[0];
+                string temp= value.Trim().Substring(1).ToLower();
+                value = Char.ToUpper(firstLetter) + temp;
                 Regex rg = new Regex("^[A-Z]{1}[a-z]{1,}$");
                 if (rg.IsMatch(value))
                     _name = value;

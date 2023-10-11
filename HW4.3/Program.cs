@@ -18,9 +18,9 @@ namespace HW4._3
 
             // TASK 2
 
-            //var inputs = Input();
-            //var student = CreateStudent(inputs.name, inputs.age, inputs.grade);
-            //student.ShowInfo();
+            var inputs = Input();
+            var student = CreateStudent(inputs.name, inputs.age, inputs.grade);
+            student.ShowInfo();
         }
 
         public static (string name,int age,int grade) Input()
